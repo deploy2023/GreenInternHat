@@ -1,0 +1,109 @@
+#first {
+    border: 1px solid white;
+    width: 210px;
+    height: 256px;
+    padding: 10px;
+    background-color: #f2f7fc;
+    color: rgb(188, 188, 188);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#block-1 ul li a,
+#block-2 ul li a,
+#block-3 ul li a {
+    text-decoration: none;
+}
+
+#first:hover {
+    border-radius: 20px;
+    border: #6084a4;
+    border-style: dotted;
+}
+
+#about {
+    background-color: #f2f7fc;
+}
+
+#box-1 {
+    border: 1px solid rgb(250, 248, 248);
+    height: max-content;
+    border-radius: 6px;
+}
+
+#box-1:hover {
+    border: 1.5px solid rgb(194, 217, 252);
+    height: max-content;
+    border-radius: 7px;
+    border-style: dotted;
+    background-color: rgb(249, 253, 253);
+}
+
+#box-2 {
+    background-color: rgb(246, 247, 248);
+}
+
+#domain a {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    color: #6084a4;
+    display: block;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 15px 12px 15px 45px;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#contain {
+    background-color: #fff;
+}
+
+#box-3 {
+    text-align: center;
+    background-color: #f5f6f6;
+}
+
+#end {
+    text-align: center;
+    margin: 10px;
+    padding-top: 8px;
+    background-color: #f8f9fa;
+}
+
+#gih,
+#gih-1 {
+    text-transform: capitalize;
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #82ed82 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#block-1,
+#block-2,
+#block-3 {
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #82ed82 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 40px center;
+    }
+}

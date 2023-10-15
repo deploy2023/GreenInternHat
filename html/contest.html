@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.clker.com/cliparts/b/0/3/7/1206576685673534961rygle_Hat_Outline.svg" type="image/x-icon">
+    <title>Green Intern Hat Contest</title>
+    <style>
+        /* Basic CSS styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            overflow: hidden;
+            /* Hide overflow during loading */
+        }
+        /* Loading screen styles */
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .loading-spinner {
+            border: 4px solid #4CAF50;
+            border-top: 4px solid transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        .test-dates {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .test-box {
+            flex-basis: calc(50% - 10px);
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .test-box:hover {
+            background-color: #45a049;
+        }
+        
+        #currentTime {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+            margin: 20px;
+        }
+        
+        #note,
+        #note ul li {
+            text-align: center;
+            text-transform: capitalize;
+            color: rgb(248, 99, 99);
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header>
+        <h1>Green Intern Hat Contest</h1>
+    </header>
+
+    <div id="currentTime"></div>
+
+    <div id="note">
+        The contest duration is 1.5 hours, with the first hour dedicated to three coding questions (Company-Specific Coding Questions) <br>
+        <ul type="none">
+            <li>easy</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li> moderate</li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li> hard</li>
+        </ul> <br>followed by the last 30 minutes for aptitude, reasoning, and puzzle-based questions
+
+    </div>
+    <div class="container">
+        <h2>Welcome to the Coding Contest!</h2>
+        <p>Join us every Sunday and Saturday for coding and aptitude tests:</p>
+        <div class="test-dates">
+            <div class="test-box">
+                <h3>Coding Test</h3>
+                <p>Sunday</p>
+
+                <a href="#" id="sundayCodingLink" style="text-decoration: none; color:brown; font-weight: bolder;">Start Contest</a>
+
+            </div>
+            <div class="test-box">
+                <h3>Aptitude Test</h3>
+                <p>Sunday</p>
+                <a href="#" id="sundayAptitudeLink" style="text-decoration: none; color:brown; font-weight: bolder;">Start Contest</a>
+            </div>
+        </div>
+        <div class="test-dates">
+            <div class="test-box">
+                <h3>Coding Test</h3>
+                <p>Saturday</p>
+                <a href="#" id="saturdayCodingLink" style="text-decoration: none; color:brown; font-weight: bolder;">Start Contest</a>
+            </div>
+            <div class="test-box">
+                <h3>Aptitude Test</h3>
+                <p>Saturday</p>
+                <a href="#" id="saturdayAptitudeLink" style="text-decoration: none; color:brown; font-weight: bolder;">Start Contest</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to display the current time
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.getElementById('currentTime');
+            timeElement.textContent = 'Current Time: ' + now.toLocaleTimeString();
+        }
+
+        // Update time initially and every second
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // JavaScript to handle clicking on contest links (you can add your logic here)
+        document.getElementById('sundayCodingLink').addEventListener('click', function(event) {
+            alert('Sunday Coding Contest started!');
+            // Add your logic to start the contest here
+            event.preventDefault(); // Prevent the default link behavior
+        });
+
+        document.getElementById('sundayAptitudeLink').addEventListener('click', function(event) {
+            alert('Sunday Aptitude Test started!');
+            // Add your logic to start the contest here
+            event.preventDefault(); // Prevent the default link behavior
+        });
+
+        document.getElementById('saturdayCodingLink').addEventListener('click', function(event) {
+            alert('Saturday Coding Contest started!');
+            // Add your logic to start the contest here
+            event.preventDefault(); // Prevent the default link behavior
+        });
+
+        document.getElementById('saturdayAptitudeLink').addEventListener('click', function(event) {
+            alert('Saturday Aptitude Test started!');
+            // Add your logic to start the contest here
+            event.preventDefault(); // Prevent the default link behavior
+        });
+
+        // JavaScript to remove the loading screen when the page has fully loaded
+        window.addEventListener('load', function() {
+            const loadingScreen = document.querySelector('.loading-screen');
+            loadingScreen.style.display = 'none';
+            document.body.style.overflow = 'visible'; // Show overflow after loading
+        });
+    </script>
+</body>
+
+</html>

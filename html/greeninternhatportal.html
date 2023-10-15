@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.clker.com/cliparts/b/0/3/7/1206576685673534961rygle_Hat_Outline.svg" type="image/x-icon">
+    <title>Green Intern Hat Portal</title>
+    <style>
+        /* styles.css */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        header {
+            background-color: #009688;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .menu-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            margin: 0 15px;
+            display: inline;
+            position: relative;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #009688;
+        }
+        
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #009688;
+            margin: 0 0 10px 0;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+        
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #009688;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading" class="loading-screen">
+        <div class="loading-content">
+            Loading...
+
+        </div>
+    </div>
+    <div id="content" class="hidden">
+        <header>
+            <h1>Green Intern Hat Portal</h1>
+        </header>
+        <section id="open-source">
+            <h2>Open Source Contribution</h2>
+            <p>
+                Open Source Contribution is a fundamental pillar of the digital world, fostering collaboration, innovation, and knowledge sharing. By getting involved in open source projects, you can work with a global community of developers, learn from experienced
+                professionals, and make a tangible impact on software used by millions. This domain opens doors to endless learning and networking opportunities.
+            </p>
+        </section>
+        <section id="web-design">
+            <h2>Web Designing</h2>
+            <p>
+                Web Designing is the creative process of shaping the visual and user interface aspects of websites. In today's digital age, a well-designed website is crucial for a strong online presence. Developing skills in web designing enables you to craft engaging
+                and user-friendly digital experiences, making you a valuable asset in the ever-expanding online world.
+            </p>
+        </section>
+        <section id="android">
+            <h2>Android Development</h2>
+            <p>
+                Android Development is all about crafting applications for the world's most popular mobile operating system. With the majority of the world's smartphones running on Android, developing Android apps provides you with a vast user base. It's an exciting
+                field that allows you to create software that can have a significant impact on people's daily lives.
+            </p>
+        </section>
+        <section id="full-stack">
+            <h2>Full Stack Web Development</h2>
+            <p>
+                Full Stack Web Development encompasses both front-end and back-end development, giving you the ability to build complete web applications. In today's interconnected world, web developers play a pivotal role in creating the digital tools and platforms
+                that people rely on. It's a versatile and high-demand domain that offers career flexibility.
+            </p>
+        </section>
+        <section id="machine-learning">
+            <h2>Machine Learning</h2>
+            <p>
+                Machine Learning is at the forefront of artificial intelligence and data-driven decision-making. It empowers computers to learn from data and make predictions, revolutionizing fields from healthcare to finance. Developing expertise in machine learning
+                opens the door to solving complex problems and innovating in various industries.
+            </p>
+        </section>
+        <section id="data-science">
+            <h2>Data Science</h2>
+            <p>
+                Data Science is the art of extracting insights and knowledge from vast data sets. In an increasingly data-driven world, data scientists are in high demand to make sense of the information overload. This domain allows you to uncover patterns, make data-driven
+                decisions, and impact critical aspects of businesses and research.
+            </p>
+        </section>
+    </div>
+    <script>
+        window.addEventListener("load", function() {
+            // Simulate a loading delay for demonstration purposes (remove in production)
+            setTimeout(function() {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("content").classList.remove("hidden");
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

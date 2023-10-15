@@ -1,0 +1,18 @@
+#contain h3 a {
+    color: rgb(190, 189, 189);
+}
+
+#contain p {
+    color: rgb(7, 7, 8);
+    background-color: rgb(253, 250, 254);
+}
+
+#contain p:hover {
+    border-radius: 1px solid black;
+    border-style: dotted;
+}
+
+#domain a {
+    text-decoration: none;
+    text-align: center;
+}

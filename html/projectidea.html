@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.clker.com/cliparts/b/0/3/7/1206576685673534961rygle_Hat_Outline.svg" type="image/x-icon">
+    <title>Project Problem Statement</title>
+    <style>
+        /*  */
+        
+        #first {
+            border: 1px solid white;
+            width: 210px;
+            height: 256px;
+            padding: 10px;
+            background-color: #f2f7fc;
+            color: rgb(188, 188, 188);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        
+        #block-1 ul li a,
+        #block-2 ul li a,
+        #block-3 ul li a {
+            text-decoration: none;
+        }
+        
+        #first:hover {
+            border-radius: 20px;
+            border: #6084a4;
+            border-style: dotted;
+        }
+        
+        #about {
+            background-color: #f2f7fc;
+        }
+        
+        #box-1 {
+            border: 1px solid rgb(250, 248, 248);
+            height: max-content;
+            border-radius: 6px;
+        }
+        
+        #box-1:hover {
+            border: 1.5px solid rgb(194, 217, 252);
+            height: max-content;
+            border-radius: 7px;
+            border-style: dotted;
+            background-color: rgb(249, 253, 253);
+        }
+        
+        #box-2 {
+            background-color: rgb(246, 247, 248);
+        }
+        
+        #domain a {
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+            color: #6084a4;
+            display: block;
+            font-weight: 500;
+            margin-top: 20px;
+            padding: 15px 12px 15px 45px;
+            position: relative;
+            transition: 0.5s;
+            z-index: 1;
+        }
+        
+        #contain {
+            background-color: #fff;
+        }
+        
+        #box-3 {
+            text-align: center;
+            background-color: #f5f6f6;
+        }
+        
+        #end {
+            text-align: center;
+            margin: 10px;
+            padding-top: 8px;
+            background-color: #f8f9fa;
+        }
+        
+        #gih,
+        #gih-1 {
+            text-transform: capitalize;
+            background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #82ed82 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 15px;
+        }
+        
+        #block-1,
+        #block-2,
+        #block-3 {
+            background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #82ed82 100%);
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+        }
+        
+        @keyframes textclip {
+            to {
+                background-position: 40px center;
+            }
+        }
+        /*  */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: spin 2s linear infinite;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li::before {
+            content: "•";
+            margin-right: 5px;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+        
+        #target section p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: rgb(224, 234, 244);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="loader"></div>
+
+    <div id="content" class="hidden">
+
+
+
+        <header>
+            <h1>Project Problem Statements for website</h1>
+        </header>
+        <main id="target">
+            <section>
+                <p>
+                    You Can use any technology to develop these application.
+                    <br> Choose only one Problem statement at a time and work upon it.
+                </p>
+            </section>
+        </main>
+
+        <main>
+            <section>
+                <h2>Problem 1</h2>
+                <p>Develop a smart chat-bot application for GreenInternHat </p>
+                <details>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>GreenInternHat Chatbot Tech Stack</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            h1 {
+                                text-align: center;
+                                background-color: #3498db;
+                                color: white;
+                                padding: 10px;
+                            }
+                            
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                margin: 10px 0;
+                            }
+                            
+                            li:nth-child(even) {
+                                background-color: #f1f1f1;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h1>GreenInternHat Chatbot Technology Stack</h1>
+                        <ul>
+                            <li>
+                                <strong>Front-end Development:</strong>
+                                <ul>
+                                    <li><strong>HTML/CSS/JavaScript:</strong> These are fundamental web technologies for building the user interface and handling user interactions.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Front-end Framework:</strong>
+                                <ul>
+                                    <li><strong>React</strong> or <strong>Vue.js:</strong> These JavaScript frameworks are great choices for building dynamic and responsive user interfaces. They allow you to create reusable UI components and manage the application
+                                        state efficiently. React, in particular, has a rich ecosystem of libraries and community support.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Backend Development:</strong>
+                                <ul>
+                                    <li><strong>Node.js:</strong> Node.js is a popular choice for building the backend of web applications, especially when you want to use JavaScript on both the front-end and back-end. It's known for its non-blocking, event-driven
+                                        architecture, making it suitable for real-time chat applications.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Websockets:</strong>
+                                <ul>
+                                    <li><strong>Socket.io:</strong> For real-time communication between the client (user's web browser) and the server, Socket.io is a widely used library. It enables you to implement chat functionality where messages are delivered
+                                        instantly without the need for constant polling.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Natural Language Processing (NLP):</strong>
+                                <ul>
+                                    <li><strong>Dialogflow</strong> or <strong>IBM Watson Assistant:</strong> These NLP platforms provide powerful tools for understanding and processing natural language input. They can be integrated with your chatbot to enable
+                                        more natural and dynamic conversations.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Database:</strong>
+                                <ul>
+                                    <li><strong>MongoDB</strong> or <strong>MySQL:</strong> Depending on your data storage needs, you can choose a database system. MongoDB is a NoSQL database that is well-suited for storing unstructured data like chat logs.
+                                        MySQL is a relational database that might be more suitable if you need to store structured data associated with user profiles or content management.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Authentication:</strong>
+                                <ul>
+                                    <li><strong>JSON Web Tokens (JWT):</strong> For user authentication, JWT is a secure and widely used method. It allows you to verify the identity of users and control access to certain features or admin privileges.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Hosting:</strong>
+                                <ul>
+                                    <li><strong>Amazon Web Services (AWS)</strong>, <strong>Microsoft Azure</strong>, or <strong>Heroku:</strong> These cloud platforms offer scalable hosting solutions. You can deploy your Node.js application, database, and
+                                        other services on these platforms to ensure your chatbot is accessible 24/7.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Version Control:</strong>
+                                <ul>
+                                    <li><strong>Git:</strong> Use Git for version control to manage your codebase, collaborate with a team, and track changes effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Continuous Integration and Deployment (CI/CD):</strong>
+                                <ul>
+                                    <li><strong>Jenkins</strong>, <strong>Travis CI</strong>, or <strong>GitHub Actions:</strong> Implement CI/CD pipelines to automate testing, build, and deployment processes, ensuring a reliable and efficient development
+                                        workflow.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Security:</strong>
+                                <ul>
+                                    <li><strong>HTTPS:</strong> Use HTTPS to secure data transmission between the client and server.</li>
+                                    <li><strong>Authentication and Authorization:</strong> Implement proper authentication and authorization mechanisms to protect user data and sensitive information.</li>
+                                    <li><strong>OWASP Top Ten:</strong> Follow security best practices outlined by the Open Web Application Security Project (OWASP) to prevent common vulnerabilities.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Monitoring and Analytics:</strong>
+                                <ul>
+                                    <li><strong>Google Analytics</strong>, <strong>Mixpanel</strong>, or custom analytics solutions: Track user interactions, engagement, and bottlenecks to continuously improve the chatbot's performance and user experience.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Scalability and Load Balancing:</strong>
+                                <ul>
+                                    <li>Implement auto-scaling and load balancing strategies to ensure your chatbot can handle a growing number of users without performance degradation.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </body>
+
+                    </html>
+
+                </details>
+            </section>
+            <section>
+                <h2>Problem 2</h2>
+                <p>Develop a blog web application for GreenInternHat</p>
+                <details>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>GreenInternHat Blog Tech Stack</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            h1 {
+                                text-align: center;
+                                background-color: #3498db;
+                                color: white;
+                                padding: 10px;
+                            }
+                            
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                margin: 10px 0;
+                            }
+                            
+                            li:nth-child(even) {
+                                background-color: #f1f1f1;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h1>GreenInternHat Blog Web App Tech Stack</h1>
+                        <ul>
+                            <li>
+                                <strong>Front-end Development:</strong>
+                                <ul>
+                                    <li><strong>HTML/CSS/JavaScript:</strong> These are fundamental web technologies for building the user interface and handling user interactions.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Front-end Framework:</strong>
+                                <ul>
+                                    <li><strong>React</strong> or <strong>Vue.js:</strong> These JavaScript frameworks are great choices for building dynamic and responsive user interfaces. They allow you to create reusable UI components and manage the application
+                                        state efficiently. React, in particular, has a rich ecosystem of libraries and community support.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Backend Development:</strong>
+                                <ul>
+                                    <li><strong>Node.js:</strong> Node.js is a popular choice for building the backend of web applications, especially when you want to use JavaScript on both the front-end and back-end. It's known for its non-blocking, event-driven
+                                        architecture, making it suitable for blog applications.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Database:</strong>
+                                <ul>
+                                    <li><strong>MongoDB</strong> or <strong>MySQL:</strong> Depending on your data storage needs, you can choose a database system. MongoDB is a NoSQL database that is well-suited for storing unstructured data like blog posts.
+                                        MySQL is a relational database that might be more suitable if you need to store structured data associated with user profiles or content management.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>User Authentication:</strong>
+                                <ul>
+                                    <li><strong>Passport.js:</strong> Passport.js is a popular authentication middleware for Node.js that supports various authentication strategies, such as username/password, social login, and more. It's highly customizable
+                                        and can be integrated with your blog app to manage user accounts and authentication.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Hosting:</strong>
+                                <ul>
+                                    <li><strong>Heroku</strong>, <strong>Amazon Web Services (AWS)</strong>, or <strong>Microsoft Azure:</strong> These cloud platforms offer scalable hosting solutions. You can deploy your Node.js application, database, and
+                                        other services on these platforms to ensure your blog app is accessible 24/7.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Version Control:</strong>
+                                <ul>
+                                    <li><strong>Git:</strong> Use Git for version control to manage your codebase, collaborate with a team, and track changes effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Security:</strong>
+                                <ul>
+                                    <li><strong>HTTPS:</strong> Use HTTPS to secure data transmission between the client and server, ensuring user data and login credentials are protected.</li>
+                                    <li><strong>Authentication and Authorization:</strong> Implement proper authentication and authorization mechanisms to protect user data and ensure that only authorized users can create and edit blog posts.</li>
+                                    <li><strong>OWASP Top Ten:</strong> Follow security best practices outlined by the Open Web Application Security Project (OWASP) to prevent common vulnerabilities.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Content Management:</strong>
+                                <ul>
+                                    <li><strong>Content Management System (CMS) like WordPress:</strong> Consider using a CMS for easier content creation, management, and publishing. While WordPress is a popular choice, there are other CMS options available
+                                        depending on your specific requirements.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Responsive Design:</strong>
+                                <ul>
+                                    <li><strong>CSS Framework (e.g., Bootstrap):</strong> Utilize a CSS framework like Bootstrap to ensure that your blog app is responsive and looks good on various devices and screen sizes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>SEO Optimization:</strong>
+                                <ul>
+                                    <li><strong>SEO Tools and Best Practices:</strong> Implement SEO best practices and use SEO tools to optimize your blog content for search engines, improving discoverability and organic traffic.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </body>
+
+                    </html>
+
+                </details>
+            </section>
+            <section>
+                <h2>Problem 3</h2>
+                <p>Develop a full stack website for GreenInternHat</p>
+                <details>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>GreenInternHat Full-Stack Web App Tech Stack</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            h1 {
+                                text-align: center;
+                                background-color: #3498db;
+                                color: white;
+                                padding: 10px;
+                            }
+                            
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                margin: 10px 0;
+                            }
+                            
+                            li:nth-child(even) {
+                                background-color: #f1f1f1;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h1>GreenInternHat Full-Stack Web App Tech Stack</h1>
+                        <ul>
+                            <li>
+                                <strong>Front-end Development:</strong>
+                                <ul>
+                                    <li><strong>HTML/CSS/JavaScript:</strong> These are fundamental web technologies for building the user interface and handling user interactions.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Front-end Framework:</strong>
+                                <ul>
+                                    <li><strong>React</strong> or <strong>Vue.js:</strong> These JavaScript frameworks are great choices for building dynamic and responsive user interfaces. They allow you to create reusable UI components and manage the application
+                                        state efficiently. React, in particular, has a rich ecosystem of libraries and community support.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Backend Development:</strong>
+                                <ul>
+                                    <li><strong>Node.js:</strong> Node.js is a popular choice for building the backend of web applications, especially when you want to use JavaScript on both the front-end and back-end. It's known for its non-blocking, event-driven
+                                        architecture, making it suitable for real-time web apps.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Framework:</strong>
+                                <ul>
+                                    <li><strong>Express.js:</strong> Express.js is a minimal and flexible Node.js web application framework. It simplifies routing, handling HTTP requests, and managing middleware, making it an excellent choice for building
+                                        web APIs and server-side logic.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Database:</strong>
+                                <ul>
+                                    <li><strong>MongoDB</strong> or <strong>MySQL:</strong> Depending on your data storage needs, you can choose a database system. MongoDB is a NoSQL database that is well-suited for storing unstructured data like blog posts
+                                        or user profiles. MySQL is a relational database that might be more suitable for structured data and complex queries.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Authentication and Authorization:</strong>
+                                <ul>
+                                    <li><strong>Passport.js:</strong> Passport.js is a popular authentication middleware for Node.js. It supports various authentication strategies, such as username/password, social login, and more. It allows you to securely
+                                        manage user accounts and access control.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Hosting:</strong>
+                                <ul>
+                                    <li><strong>Heroku</strong>, <strong>Amazon Web Services (AWS)</strong>, or <strong>Microsoft Azure:</strong> These cloud platforms offer scalable hosting solutions. You can deploy your Node.js application, database, and
+                                        other services on these platforms to ensure your web app is accessible 24/7.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Version Control:</strong>
+                                <ul>
+                                    <li><strong>Git:</strong> Use Git for version control to manage your codebase, collaborate with a team, and track changes effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Security:</strong>
+                                <ul>
+                                    <li><strong>HTTPS:</strong> Use HTTPS to secure data transmission between the client and server, ensuring user data and login credentials are protected.</li>
+                                    <li><strong>OWASP Top Ten:</strong> Follow security best practices outlined by the Open Web Application Security Project (OWASP) to prevent common vulnerabilities.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Responsive Design:</strong>
+                                <ul>
+                                    <li><strong>CSS Framework (e.g., Bootstrap):</strong> Utilize a CSS framework like Bootstrap to ensure that your web app is responsive and looks good on various devices and screen sizes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>SEO Optimization:</strong>
+                                <ul>
+                                    <li><strong>SEO Tools and Best Practices:</strong> Implement SEO best practices and use SEO tools to optimize your web app's content for search engines, improving discoverability and organic traffic.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>API Integration:</strong>
+                                <ul>
+                                    <li><strong>Third-party APIs:</strong> Integrate third-party APIs for additional functionality, such as payment processing, geolocation, social media sharing, and more, depending on the requirements of your web app.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </body>
+
+                    </html>
+
+                </details>
+            </section>
+            <section>
+                <h2>Problem 4</h2>
+                <p>Develop a Codeing Contest full stack website for GreenInternHat</p>
+                <details>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>GreenInternHat Coding Contest Website Tech Stack</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            h1 {
+                                text-align: center;
+                                background-color: #3498db;
+                                color: white;
+                                padding: 10px;
+                            }
+                            
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                margin: 10px 0;
+                            }
+                            
+                            li:nth-child(even) {
+                                background-color: #f1f1f1;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h1>GreenInternHat Coding Contest Website Tech Stack</h1>
+                        <ul>
+                            <li>
+                                <strong>Front-end Development:</strong>
+                                <ul>
+                                    <li><strong>HTML/CSS/JavaScript:</strong> These are fundamental web technologies for building the user interface and handling user interactions.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Front-end Framework:</strong>
+                                <ul>
+                                    <li><strong>React</strong> or <strong>Angular:</strong> These JavaScript frameworks are suitable for building complex and interactive user interfaces for the coding contest platform. They provide a structured way to manage
+                                        UI components and state.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Backend Development:</strong>
+                                <ul>
+                                    <li><strong>Node.js:</strong> Node.js is a popular choice for building the backend of web applications, including a coding contest platform. It's known for its scalability and non-blocking I/O, making it suitable for handling
+                                        a large number of user interactions and submissions.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Framework:</strong>
+                                <ul>
+                                    <li><strong>Express.js:</strong> Express.js is a minimal and flexible Node.js web application framework that simplifies routing, handling HTTP requests, and managing middleware. It's well-suited for building APIs and server-side
+                                        logic.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Database:</strong>
+                                <ul>
+                                    <li><strong>MongoDB:</strong> MongoDB is a NoSQL database that can store user profiles, contest questions, and submissions efficiently. Its flexibility and scalability make it a good choice for this type of application.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>User Authentication:</strong>
+                                <ul>
+                                    <li><strong>Passport.js:</strong> Passport.js is a widely-used authentication middleware for Node.js. It supports various authentication strategies, allowing you to implement user registration and login securely.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Web Hosting:</strong>
+                                <ul>
+                                    <li><strong>Heroku</strong>, <strong>Amazon Web Services (AWS)</strong>, or <strong>Microsoft Azure:</strong> These cloud platforms offer scalable hosting solutions, ensuring your coding contest website is available and
+                                        responsive even under heavy traffic.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Version Control:</strong>
+                                <ul>
+                                    <li><strong>Git:</strong> Use Git for version control to manage your codebase, collaborate with a team, and track changes effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Security:</strong>
+                                <ul>
+                                    <li><strong>HTTPS:</strong> Use HTTPS to secure data transmission between the client and server, ensuring user data and contest submissions are protected.</li>
+                                    <li><strong>Authentication and Authorization:</strong> Implement robust authentication and authorization mechanisms to secure user accounts and ensure fair participation in coding contests.</li>
+                                    <li><strong>OWASP Top Ten:</strong> Follow security best practices outlined by the Open Web Application Security Project (OWASP) to prevent common vulnerabilities.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Real-time Communication:</strong>
+                                <ul>
+                                    <li><strong>Socket.io:</strong> Socket.io can be used for real-time communication between contestants and the contest platform. It enables instant updates, notifications, and leaderboard changes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Scalability:</strong>
+                                <ul>
+                                    <li>Implement scalability measures to handle a growing number of participants and submissions as your coding contests gain popularity. This may include load balancing and serverless architecture.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </body>
+
+                    </html>
+
+                </details>
+            </section>
+            <header>
+                <h1>Project Problem Statements for App</h1>
+            </header>
+
+
+            <section>
+                <h2>Problem 1</h2>
+                <p>Develop a Full Stack app for GreenInternHat </p>
+                <details>
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Reasons for Technology Choice in App Development</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            h1 {
+                                text-align: center;
+                                background-color: #3498db;
+                                color: white;
+                                padding: 10px;
+                            }
+                            
+                            ul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            li {
+                                margin: 10px 0;
+                            }
+                            
+                            li:nth-child(even) {
+                                background-color: #f1f1f1;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h1>Reasons for Technology Choice in App Development</h1>
+                        <ul>
+                            <li>
+                                <strong>Java:</strong>
+                                <ul>
+                                    <li>Java is a primary language for Android app development.</li>
+                                    <li>It offers extensive support for Android's APIs and libraries.</li>
+                                    <li>Java has a large developer community, making it easy to find resources and solutions.</li>
+                                    <li>It has been a stable and reliable choice for Android development.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Kotlin:</strong>
+                                <ul>
+                                    <li>Kotlin is a modern and expressive language for Android.</li>
+                                    <li>It reduces boilerplate code, making codebases more maintainable and readable.</li>
+                                    <li>Kotlin is fully interoperable with Java, allowing for a gradual transition.</li>
+                                    <li>It's officially supported by Google as an Android development language.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Firebase:</strong>
+                                <ul>
+                                    <li>Firebase offers a comprehensive suite of backend services for mobile app development.</li>
+                                    <li>It simplifies backend development, allowing developers to focus on building features.</li>
+                                    <li>Real-time capabilities, such as a real-time database, enable interactive and collaborative apps.</li>
+                                    <li>Firebase is designed to scale effortlessly for both small and large-scale applications.</li>
+                                    <li>It provides robust authentication solutions, enhancing app security.</li>
+                                    <li>Built-in analytics and crash reporting tools monitor app performance and user behavior.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </body>
+
+                    </html>
+
+                </details>
+            </section>
+
+            <strong>
+                New Problem Statement Comming Soon.....
+            </strong>
+
+
+        </main>
+        <!--  -->
+        <footer id="footer" class="footer-area bg-f7fafd">
+            <div class="col-lg-12 col-md-12" id="end">
+                <div class="copyright-area">
+                    <p><strong>
+                            Copyright ©
+                            <!-- -->2023
+                            <!-- -->
+                            Green Intern Hat. All rights reserved by </strong>
+                        <a href="#" target="_blank" style="text-decoration: none; color: rgb(43, 79, 43);"><b
+                                id="gih">GreenInternHat </b>
+                            <img src="file:///C:/Users/Dheeraj%20pyasi/OneDrive/Desktop/green%20intern%20hat/imges/greenhat.jpg" alt="" width="30px" height="20px">
+                        </a>
+                    </p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    </footer>
+
+    <!--  -->
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simulate a delay for the loading animation (you can adjust the timeout)
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 2000); // 2000ms (2 seconds) delay for demonstration purposes
+        });
+    </script>
+</body>
+
+</html>
